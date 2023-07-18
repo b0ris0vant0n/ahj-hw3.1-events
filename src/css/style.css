@@ -23,7 +23,7 @@
   height: 140px;
   margin-right: 5px;
   float: left;
-  background: rgb(235, 216, 76);
+  background: rgb(243, 216, 16);
 }
 
 .grid-cell:last-child {
@@ -38,7 +38,6 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   display: none;
   width: 500px;
   height: 300px;
@@ -46,7 +45,6 @@ img {
   text-align: center;
   font-size: 25px;
   background-color: rgb(28, 116, 199);
-  border: none;
 }
 
 .modal_open {
