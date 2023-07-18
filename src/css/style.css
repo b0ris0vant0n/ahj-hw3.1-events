@@ -2,6 +2,7 @@
   display: grid;
   justify-content: center;
   margin-top: 10px;
+  cursor: url('../img/molot.png'), pointer;
 }
 
 .grid-row {
@@ -59,3 +60,4 @@ img {
   text-align: center;
   font-size: 25px;
 }
+
