@@ -1,6 +1,6 @@
 import gameOver from './game-over.js';
 
-export default function userClick(timerId) {
+export default function userClick(position) {
     const playingItemsCollection = document.querySelectorAll('.grid-cell');
 
     const userPoints = document.querySelector('.user-got-points__number');
@@ -17,7 +17,7 @@ export default function userClick(timerId) {
             console.log(userFailPoints);
             if (userFailPoints >= 5) {
                 gameOver();
-                clearTimeout(timerId);
+                clearTimeout(position);
             }
           }
       })
