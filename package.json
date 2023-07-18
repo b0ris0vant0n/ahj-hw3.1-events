@@ -1,0 +1,15 @@
+{
+  "name": "ahj-homeworks_hw3_Events",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/b0ris0vant0n/ahj-hw3.1-events.git",
+  "author": "Anton Borisov <borisov2011@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack-merge": "^5.9.0"
+  },
+  "scripts" : {
+   "start" : "webpack-dev-server --config webpack.dev.js",
+   "build" : "webpack --config webpack.prod.js"
+  }
+}
