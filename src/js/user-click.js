@@ -9,8 +9,8 @@ export default function userClick(position) {
 
     for (const playingItem of playingItemsCollection) {
       playingItem.addEventListener('click', (e) => {
-
           if (e.target.className === 'icon') {
+            playingItem.classList.add('cursor')
             userPoints.textContent = +userPoints.textContent + 1;
           } else {
             userFailPoints++;
