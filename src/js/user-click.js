@@ -10,7 +10,7 @@ export default function userClick(timerId) {
     for (const playingItem of playingItemsCollection) {
       playingItem.addEventListener('click', (e) => {
 
-          if (e.target.className === 'grid-cell') {
+          if (e.target.className === 'icon') {
             userPoints.textContent = +userPoints.textContent + 1;
           } else {
             userFailPoints++;
