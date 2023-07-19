@@ -7,7 +7,7 @@ export default function userClick(position) {
 
     const userMisses = document.querySelector('.user-got-misses__number')
 
-
+    userMisses = 0
 
     for (const playingItem of playingItemsCollection) {
       playingItem.addEventListener('click', (e) => {
