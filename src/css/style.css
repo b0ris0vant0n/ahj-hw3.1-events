@@ -56,6 +56,14 @@ img {
 }
 
 .user-got-points {
+  color: green;
+  margin: 30px 0;
+  text-align: center;
+  font-size: 25px;
+}
+
+.user-got-misses {
+  color: red;
   margin: 30px 0;
   text-align: center;
   font-size: 25px;
