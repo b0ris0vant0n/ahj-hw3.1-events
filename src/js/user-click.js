@@ -1,21 +1,21 @@
-import gameOver from './game-over.js';
+import gameOver from './game-over.js'
 
 export default function userClick(position) {
-    const playingItemsCollection = document.querySelectorAll('.grid-cell');
+    const playingItemsCollection = document.querySelectorAll('.grid-cell')
 
-    const userPoints = document.querySelector('.user-got-points__number');
+    const userPoints = document.querySelector('.user-got-points__number')
 
-    let userFailPoints = 0;
+    const userMisses = document.querySelector('.user-got-misses__number')
+
+
 
     for (const playingItem of playingItemsCollection) {
       playingItem.addEventListener('click', (e) => {
           if (e.target.className === 'icon') {
-            playingItem.classList.add('cursor')
-            userPoints.textContent = +userPoints.textContent + 1;
+            userPoints.textContent = +userPoints.textContent + 1
           } else {
-            userFailPoints++;
-            console.log(userFailPoints);
-            if (userFailPoints >= 5) {
+            userMisses.textContent = +userMisses.textContent + 1
+            if (userMisses >= 5) {
                 gameOver();
                 clearTimeout(position);
             }
