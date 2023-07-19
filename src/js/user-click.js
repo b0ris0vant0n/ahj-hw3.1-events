@@ -14,6 +14,7 @@ export default function userClick(position) {
           if (e.target.className === 'icon') {
             userPoints.textContent = +userPoints.textContent + 1
           } else {
+            userMisses++
             userMisses.textContent = +userMisses.textContent + 1
             if (userMisses >= 5) {
                 gameOver();
