@@ -5,7 +5,7 @@ export default function userClick(position) {
 
     const userPoints = document.querySelector('.user-got-points__number')
 
-    const userMisses = document.querySelector('.user-got-misses__number')
+    let userMisses = document.querySelector('.user-got-misses__number')
 
     userMisses = 0
 
