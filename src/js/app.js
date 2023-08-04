@@ -1,6 +1,8 @@
 import Character from "./character";
-import userClick from "./user-click";
+import Game from "./user-click";
 
-const Game = new Character(document.querySelector(".grid-container"));
+const goblin = new Character
+console.log(goblin)
+const game = new Game(goblin)
 
-userClick(Game.randomPosition());
+game.init()
