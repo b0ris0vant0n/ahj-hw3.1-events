@@ -1,10 +1,13 @@
 export default class Character {
     constructor(elem) {
       this.cell = elem.querySelectorAll(".grid-cell");
-      this.icon = elem.querySelector(".icon");
     }
-  
-    getRandomPosition() {
+
+    randomPosition() {
+      const goblin = document.createElement('img');
+      goblin.classList.add('grid-cell__img');
+      goblin.src = 'https://github.com/b0ris0vant0n/ahj-hw3.1-events/blob/main/src/img/goblin.png?raw=true';
+
       let previous = 0;
       let i = 0;
   
@@ -14,7 +17,7 @@ export default class Character {
         }
   
         previous = i;
-        this.cell[i].appendChild(this.icon);
+        this.cell[i].appendChild(goblin);
       }, 1000);
     }
   }

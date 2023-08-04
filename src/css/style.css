@@ -1,28 +1,22 @@
+body {
+  text-align: center;
+  margin-left: auto;
+}
+
 .grid-container {
-  display: grid;
-  justify-content: center;
+  max-width: 600px;
+  display: inline-block;
   margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   cursor: url('../img/molot.png'), pointer;
-}
-
-.grid-row {
-  margin-bottom: 5px;
-}
-
-.grid-row:last-child {
-  margin-bottom: 0;
-}
-
-.grid-row:after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 .grid-cell {
   width: 140px;
   height: 140px;
   margin-right: 5px;
+  margin-bottom: 5px;
   float: left;
   background: rgb(243, 216, 16);
 }
@@ -31,7 +25,7 @@
   margin-right: 0;
 }
 
-img {
+.grid-cell__img {
   padding: 10px 10px;
 }
 
@@ -43,17 +37,13 @@ img {
   top: 50%; 
   margin-left: -150px;
   margin-top: -150px;
-  display: none;
   text-align: center;
   align-items: center;
   font-size: 25px;
-  background-color: rgb(28, 116, 199);
-  
-}
-
-.modal_open {
+  background-color: rgb(199, 28, 28);
   display: flex;
 }
+
 
 .user-got-points {
   color: green;

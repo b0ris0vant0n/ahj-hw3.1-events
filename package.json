@@ -37,5 +37,8 @@
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist"
+  },
+  "dependencies": {
+    "wepback": "^1.0.0"
   }
 }
