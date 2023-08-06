@@ -19,6 +19,7 @@ export default class Game {
     this.userMisses = document.querySelector('.user-got-misses__number')
     if (event.target.className === 'grid-cell__img') {
         this.userPoints.textContent = +this.userPoints.textContent + 1
+        this.goblin.deleteGoblin()
       } else {
         this.userMisses.textContent = +this.userMisses.textContent + 1
         if (+this.userMisses.textContent >= 5) {
